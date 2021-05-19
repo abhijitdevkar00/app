@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+
+  <meta charset="UTF-10">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/naik.css') }}">
+  
+</head><body bgcolor=#20B2AA></body><body><div style="background-image:url('fraud2.jpg');">
+
+ <div class="login">
+
+
+
+
+
+<center>
+<img src='excelr.jpg' alt="excelr">
+
+	<h1 style="color:red;">FRAUD ANALYTICS</h1><br>
+
+   <div>
+ <from action="/result' method="POST">
+
+
+<input type="text" name="age" placeholder="Age" required="required" />
+<select id="age" name="age">
+   <option >eg::0-10</option>
+    <option>0 - 17</option>
+    <option >18-29 </option>
+    <option >30-49 </option>
+    <option> 50-69 </option>
+    <option >70 /Older </option>
+  </select><br></br>
+ 
+
+<input type="text" name="gender" placeholder="Gender" required="required"/ >
+<select id="gender" name="gender">
+    <option value="0">eg::Male/Female</option>
+    <option value="1">M</option>
+    <option value="2">F </option>
+</select><br></br>
+
+<input type="text" name="hospital conty" placeholder="Hospital Conty" required="required"/ >
+
+<select id="hospital conty" name="hospital conty">
+     <option value="0">eg::india</option>
+    <option value="0">Allegany</option>
+  
+   <option value="1">Chautauqua </option>
+   <option value="2">Erie </option>
+   <option value="3">Niagara </option>
+   <option value="4">Orleans </option>
+   <option value="5">Wyoming </option>
+ 
+
+   <option value="6">Chemung</option>
+   <option value="7">Livingston </option>
+   <option value="8">Monroe </option>
+   <option value="9">Ontario </option>
+   <option value="10">Steuben </option>
+
+   <option value="11">Wayne </option>
+   <option value="12">Oswego </option>
+   <option value="13">Broome </option>
+   <option value="14">Cayuga </option> 
+   <option value="15">Cortland </option>
+
+
+
+      <option value="16">Jefferson </option>
+     <option value="17">Lewis </option>
+    <option value="18">Madison </option>
+    <option value="19">Oneida </option> 
+   <option value="20">Onondaga </option>
+
+
+
+<option value="21">Oswego </option>
+<option value="22">St Lawrence </option>
+<option value="23">Tompkins </option>
+<option value="24">Albany </option> 
+<option value="25">Clinton </option>
+
+
+
+<option value="26">Columbia </option>
+<option value="27">Delaware </option>
+<option value="28">Franklin </option>
+<option value="29">Fulton </option> 
+<option value="30">Montgomery </option>
+
+<option value="31">Otsego </option>
+<option value="32">Rensselaer </option>
+<option value="33">Saratoga </option>
+<option value="34">Schenectady </option> 
+<option value="35">Warren </option>
+
+
+  <option value="36">Dutchess </option>
+<option value="37">Orange </option>
+<option value="38">Putnam </option>
+<option value="39">Rockland </option> 
+<option value="40">Sullivan </option>
+
+
+  <option value="41">Ulster </option>
+<option value="42">Westchester </option>
+<option value="43">Bronx </option>
+<option value="44">Rockland </option> 
+<option value="45">Sullivan </option>
+
+
+</select> <br></br>
+
+ <input type="text" name="days spend in hospital" placeholder="Days Spend In Hospital" required="required" />
+<select id="days spend in hospital" name="days spend in hospital">
+   <option value="0">eg::1</option>
+    <option value="0">1</option>
+  
+   <option value="1">2 </option>
+   <option value="2">3 </option>
+   <option value="3">4 </option>
+   <option value="4">5 </option>
+   <option value="5">6 </option>
+ 
+
+   <option value="6">7</option>
+   <option value="7">8 </option>
+   <option value="8">9</option>
+   <option value="9">10 </option>
+   <option value="10">11 </option>
+
+   <option value="11">12 </option>
+   <option value="12">13 </option>
+   <option value="13">14 </option>
+   <option value="14">15 </option> 
+   <option value="15">16 </option>
+
+
+
+      <option value="16">17 </option>
+     <option value="17">18</option>
+    <option value="18">19 </option>
+    <option value="19">20 </option> 
+
+
+   
+   <option value="20">21 </option> 
+   <option value="21">22 </option>
+   <option value="22">23</option>
+   <option value="23">24 </option>
+   <option value="24">25 </option>
+   <option value="25">26 </option>
+ 
+
+   <option value="26">27</option>
+   <option value="27">28 </option>
+   <option value="28">29</option>
+   <option value="29">30 </option>
+   <option value="30">31 </option>
+
+   <option value="31">32 </option>
+   <option value="32">33 </option>
+   <option value="33">34 </option>
+   <option value="34">35 </option> 
+   <option value="35">36 </option>
+
+
+
+      <option value="36">37 </option>
+     <option value="37">38</option>
+    <option value="38">39 </option>
+    <option value="39">40 </option> 
+    <option value="40">41 </option>
+   <option value="41">42 </option>
+   <option value="42">43 </option>
+   <option value="43">44 </option>
+   <option value="44">45 </option>
+ 
+
+   <option value="45">46</option>
+   <option value="46">47 </option>
+   <option value="47">48</option>
+   <option value="48">49 </option>
+   <option value="49">50 </option>
+
+   <option value="50">51 </option>
+   <option value="51">52 </option>
+   <option value="52">53 </option>
+   <option value="53">54 </option> 
+   <option value="54">55 </option>
+
+     
+    
+  
+  </select><br></br>
+
+
+
+ <input type="text" name="adnission type" placeholder="Admission type" required="required" />
+<select id="admission type" name="admission type">
+   <option value="0">eg::etc</option>
+    <option value="0">Elective</option>
+  
+   <option value="1">Urgent</option>
+   <option value="2">Emergency </option>
+   <option value="3">Newborn </option>
+</select><br></br>
+ 
+
+
+<input type="text" name="total charge" placeholder="Total Charge=" required="required"/ ><br></br>
+
+
+
+  
+
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+</center>
+
+   <br>
+   </br>
+<p style="font-size:50px; team member</p>
+a<br></br>
+b<br></br>
+c<br></br>
+d<br></br>
+
+ </div>
+
+
+</body>
+</html>
